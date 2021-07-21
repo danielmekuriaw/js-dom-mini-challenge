@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Added h1 to the selector name argument inside the querySelector method (i.e. making it "h1#header") and added the 'defer' keyword inside the script tag so that all HTML functions are loaded before running index.js.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Added the statement - header.style.color = "blue" - which makes use of the style attributes of the selected header and particularly the color attribute among the different style attributes.
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+Accessed the profile div block using its id and assigned the appropriate data values to each elements of the profile by obtaining them using their tag names.
 ```
 ___________
 
@@ -89,7 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Used string interpolation to use a foreach loop with the code html snippet given above. String interpolation was particularly important to make the html dynamic. After every iteration, a new div block is appended to the existing list selected by the querySelector. These new blocks will have the corresponding data from the traveler object.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +110,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Found the element to be removed using a query selector and the CSS Attribute Selectors guide provided above, and called the remove() function on this element.
 ```
